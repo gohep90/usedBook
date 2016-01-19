@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context="sku.market.com.Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/top"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="판매등록물품"
+            android:background="@drawable/skumarket"
+            android:id="@+id/textView"
+            android:gravity="center_vertical|center_horizontal"
+
+            android:textColor="#71bf44"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:weightSum="10"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/listView"
+            android:background="#ffffff"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/bot"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/hhouse"
+            android:background="#ffffff"
+            android:text="홈"
+            android:paddingTop="5dp"
+            android:textColor="#9E9E9E"
+            android:id="@+id/btn_home"
+            android:textSize="14dp"
+            />
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/myinfoclick"
+            android:id="@+id/btn_myinfo"
+            android:background="#ffffff"
+            android:text="내정보"
+            android:paddingTop="5dp"
+            android:textColor="#71bf44"
+            android:textSize="14dp"
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/sellregistration"
+            android:background="#ffffff"
+            android:text="판매등록 "
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:id="@+id/btn_enroll_sell"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyregistration"
+            android:background="#ffffff"
+            android:text=" 구매등록"
+            android:paddingTop="5dp"
+            android:textColor="#9E9E9E"
+            android:id="@+id/btn_enroll_buy"
+
+            android:textSize="14dp"
+            />
+
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyboard"
+            android:background="#ffffff"
+            android:text="삽니다"
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:id="@+id/btn_buy"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
+

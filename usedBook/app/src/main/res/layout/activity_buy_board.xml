@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="삽니다 게시판"
+            android:background="@drawable/skumarket"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#71bf44"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.8"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="도서명 검색"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/selector"
+                android:background="#0000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="#D8D8D8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:id="@+id/table_buy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/hhouse"
+            android:background="#ffffff"
+            android:text="홈"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:textColor="#9e9e9e"/>
+
+
+        <Button
+            android:id="@+id/btn_my_info"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/myinfo"
+            android:background="#ffffff"
+            android:text="내정보"
+            android:paddingTop="5dp"
+            android:textSize="14dp"
+            android:textColor="#9e9e9e"/>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/sellregistration"
+            android:background="#ffffff"
+            android:text="판매등록 "
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:id="@+id/btn_enroll_buy"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyregistration"
+            android:background="#ffffff"
+            android:text=" 구매등록"
+            android:paddingTop="5dp"
+            android:textColor="#9E9E9E"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyboardclick"
+            android:background="#ffffff"
+            android:text="삽니다"
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:textSize="14dp"
+            />
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="구매등록물품"
+            android:background="@drawable/skumarket"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#71bf44"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#D8D8D8">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableLayout
+                android:id="@+id/table_my_buy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </TableLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/hhouse"
+            android:background="#ffffff"
+            android:text="홈"
+            android:paddingTop="5dp"
+            android:textColor="#9e9e9e"
+            android:textSize="14dp"
+            />
+
+
+        <Button
+            android:id="@+id/btn_my_info"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/myinfoclick"
+            android:background="#ffffff"
+            android:text="내정보"
+            android:paddingTop="5dp"
+            android:textColor="#71bf44"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/sellregistration"
+            android:background="#ffffff"
+            android:text="판매등록 "
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/btn_enroll_buy"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyregistration"
+            android:background="#ffffff"
+            android:text=" 구매등록"
+            android:paddingTop="5dp"
+            android:textColor="#9E9E9E"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:id="@+id/btn_buy"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyboard"
+            android:background="#ffffff"
+            android:text="삽니다"
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

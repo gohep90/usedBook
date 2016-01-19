@@ -1,0 +1,247 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".input"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:background="@drawable/bar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="팝니다 게시판"
+            android:background="@drawable/skumarket"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#71bf44"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.08"
+        android:weightSum="10"
+        android:orientation="horizontal"
+
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.8"
+            android:paddingTop="5dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <EditText
+                android:id="@+id/edt_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="도서명 검색"
+                android:singleLine="true"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center_horizontal|center_vertical">
+
+            <ImageButton
+                android:id="@+id/btn_search"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/selector"
+                android:background="#0000"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.72"
+        >
+
+
+        <TabHost
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tabHost"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    ></TabWidget>
+
+                <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="4dp"
+                    >
+
+
+                    <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+
+                        <ListView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:id="@+id/listView"
+                            android:background="#ffffff"
+                            />
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <AnalogClock
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:id="@+id/analogClock"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3" />
+                    </LinearLayout>
+
+
+
+
+                    <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <CalendarView
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:id="@+id/calendarView"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_weight="0.3" />
+                    </LinearLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bot"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:weightSum="5">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/hhouseclick"
+            android:background="#ffffff"
+            android:text="홈"
+            android:paddingTop="5dp"
+            android:textColor="#71bf44"
+            android:textSize="14dp"
+            android:id="@+id/btn_home" />
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/myinfo"
+            android:id="@+id/btn_myinfo"
+            android:background="#ffffff"
+            android:text="내정보"
+            android:paddingTop="5dp"
+            android:textColor="#9E9E9E"
+            android:textSize="14dp"
+            />
+
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/sellregistration"
+            android:background="#ffffff"
+            android:text="판매등록 "
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:id="@+id/btn_enroll_sell"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyregistration"
+            android:background="#ffffff"
+            android:text=" 구매등록"
+            android:paddingTop="5dp"
+            android:textColor="#9E9E9E"
+            android:id="@+id/btn_enroll_buy"
+            android:textSize="14dp"
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyboard"
+            android:background="#ffffff"
+            android:text="삽니다"
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:id="@+id/btn_buy"
+            android:textSize="14dp"
+            />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+

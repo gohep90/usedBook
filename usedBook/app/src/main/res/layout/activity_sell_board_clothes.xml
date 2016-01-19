@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sku.market.com.Main">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/top"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="팝니다(옷)"
+            android:background="@drawable/skumarket"
+            android:id="@+id/textView"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:textColor="#71bf44"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/skumarketsub"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="11dp"
+            android:textColor="#71bf44"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top"
+        android:id="@+id/mid"
+        android:layout_above="@+id/bot">
+
+        <EditText
+            android:id="@+id/booksearchedit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="책이름"
+            android:layout_alignBottom="@+id/bookbtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/bookbtn"
+            android:layout_toLeftOf="@+id/bookbtn" />
+
+        <ImageButton
+            android:id="@+id/bookbtn"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector"
+            android:background="#0000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="글 클릭"
+            android:id="@+id/button6"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:onClick="contentsclick" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/bot"
+        android:background="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="73dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/hhouse"
+            android:background="#ffffff"
+            android:text="홈"
+
+            android:textColor="#9E9E9E"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/clothes_btn_home_id"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/myinfo"
+            android:background="#ffffff"
+            android:text="내정보"
+            android:id="@+id/clothes_myinfo_id"
+            android:textColor="#9E9E9E"
+            android:layout_toRightOf="@+id/clothes_btn_home_id"
+            android:layout_toEndOf="@+id/clothes_btn_home_id"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/buyregistration"
+            android:background="#ffffff"
+            android:text=" 구매등록"
+            android:textColor="#9E9E9E"
+
+            android:layout_toLeftOf="@+id/button"
+            android:layout_toStartOf="@+id/button"
+            android:id="@+id/btn_myinfo_id"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="74dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/sellregistration"
+            android:background="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:text="판매등록 "
+            android:textColor="#9E9E9E"
+
+            android:layout_centerHorizontal="true"
+            android:id="@+id/button4"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/buyboard"
+            android:background="#ffffff"
+            android:text="삽니다"
+            android:textColor="#9E9E9E"
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/button"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+

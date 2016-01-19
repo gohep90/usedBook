@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    tools:context="sku.market.com.Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/top"
+        >
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="서경중고장터"
+            android:background="@drawable/skumarket"
+            android:id="@+id/textView"
+            android:gravity="center_vertical|center_horizontal"
+
+            android:textColor="#71bf44"
+            android:textStyle="bold"
+            android:textSize="24dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical"
+        android:id="@+id/mid">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                >
+            </LinearLayout>
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/book"
+                android:background="@drawable/bbok"
+                android:layout_alignParentLeft="true"
+                android:textColor="#81CAE1"
+                android:text="BOOK"
+                android:onClick="btnbook"
+                android:layout_gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                >
+            </LinearLayout>
+            <Button
+                android:padding="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/clothes"
+                android:background="@drawable/bbok"
+                android:onClick="btnclothes"
+                android:textColor="#EE4B4E"
+                android:text="CLOTHES"
+                android:layout_gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                >
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:weightSum="10"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                >
+            </LinearLayout>
+
+            <Button
+
+                android:layout_width="wrap_content"
+                android:padding="15dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/digital"
+                android:background="@drawable/bbok"
+                android:textColor="#347CA8"
+                android:text="DIGITAL"
+                android:onClick="btnit"
+                android:layout_gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                >
+            </LinearLayout>
+            <Button
+                android:padding="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/etc"
+                android:background="@drawable/bbok"
+                android:onClick="btnetc"
+                android:textColor="#ffac0a"
+                android:text="ETC"
+                android:layout_gravity="center_vertical" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.5"
+                >
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bot"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:weightSum="5"
+        android:orientation="horizontal"
+        android:layout_height="0dp">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/hhouseclick"
+            android:background="#ffffff"
+            android:text="홈"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:textColor="#71bf44"
+
+            android:id="@+id/btn_home_id" />
+
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/myinfo"
+            android:id="@+id/btn_myinfo_id"
+            android:background="#ffffff"
+            android:text="내정보"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:textColor="#9E9E9E"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/sellregistration"
+            android:background="#ffffff"
+            android:text="판매등록 "
+            android:textSize="14dp"
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:id="@+id/mainsellreg"
+
+            />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyregistration"
+            android:background="#ffffff"
+            android:text=" 구매등록"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:textColor="#9E9E9E"
+            android:id="@+id/mainbuyreg"
+
+
+            />
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/buyboard"
+            android:background="#ffffff"
+            android:text="삽니다"
+            android:textSize="14dp"
+            android:textColor="#9E9E9E"
+            android:paddingTop="5dp"
+            android:id="@+id/mainbuyboard"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,267 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bar">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="구매상세정보"
+            android:background="@drawable/skumarket"
+            android:gravity="center_vertical|center_horizontal"
+            android:textColor="#71bf44"
+            android:textStyle="bold"
+            android:textSize="24dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:weightSum="9"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="제목"
+                android:background="@drawable/inform"
+                android:textSize="18dp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+            <TextView
+                android:id="@+id/info_title"
+                android:layout_width="0dp"
+                android:background="@drawable/inform"
+                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:layout_weight="8"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="도서명"
+                android:background="@drawable/inform"
+                android:textSize="18dp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+            <TextView
+                android:id="@+id/info_book"
+                android:layout_width="0dp"
+                android:background="@drawable/inform"
+                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="저자"
+                android:background="@drawable/inform"
+                android:textSize="18dp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+            <TextView
+                android:id="@+id/info_author"
+                android:layout_width="0dp"
+                android:background="@drawable/inform"
+                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="출판사"
+                android:background="@drawable/inform"
+                android:textSize="18dp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+            <TextView
+                android:id="@+id/info_publisher"
+                android:layout_width="0dp"
+                android:background="@drawable/inform"
+                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="가격"
+                android:background="@drawable/inform"
+                android:textSize="18dp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+            <TextView
+                android:id="@+id/info_cost"
+                android:layout_width="0dp"
+                android:background="@drawable/inform"
+                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="상태"
+                android:background="@drawable/inform"
+                android:textSize="18dp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+            <TextView
+                android:id="@+id/info_state"
+                android:layout_width="0dp"
+                android:background="@drawable/inform"
+                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:text="기타"
+                android:background="@drawable/inform"
+                android:textSize="18dp"
+                android:gravity="center_horizontal|center_vertical"/>
+
+            <TextView
+                android:id="@+id/info_other"
+                android:layout_width="0dp"
+                android:background="@drawable/inform"
+                android:textColor="#000000"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="18dp"
+                android:layout_weight="8"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_call"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="전화하기"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#71bf44"/>
+
+        <Button
+            android:id="@+id/btn_msg"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="문자하기"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:background="#ffac0a"/>
+
+    </LinearLayout>
+
+</LinearLayout>
